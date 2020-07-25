@@ -16,7 +16,7 @@ jobs:
     - name: make
       run: make
     - name: Upload a Build Artifact
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: wrk-linux
         path: wrk
@@ -29,7 +29,7 @@ jobs:
     - name: make
       run: make
     - name: Upload a Build Artifact
-    - uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v2
       with:
         name: wrk-macos
         path: wrk
