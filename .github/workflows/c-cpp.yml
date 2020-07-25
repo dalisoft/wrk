@@ -18,13 +18,11 @@ jobs:
     - name: Upload a Build Artifact
     - uses: actions/upload-artifact@v2
       with:
-        # Artifact name
         name: wrk-linux
-        # A file, directory or wildcard pattern that describes what to upload
         path: wrk
   build_macos:
 
-    runs-on: macos-10.14
+    runs-on: macos-10.15
 
     steps:
     - uses: actions/checkout@v2
@@ -33,7 +31,5 @@ jobs:
     - name: Upload a Build Artifact
     - uses: actions/upload-artifact@v2
       with:
-        # Artifact name
         name: wrk-macos
-        # A file, directory or wildcard pattern that describes what to upload
         path: wrk
